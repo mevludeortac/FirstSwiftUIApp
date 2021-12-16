@@ -9,8 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        //vertical stack
+        VStack{
+            Text("Hello, canım!")
+                .bold()
+                .foregroundColor(.pink)
+                .padding()
+                .font(.largeTitle)
+    
+            Text("hoşgeldin kuzuuuu")
+                .font(.largeTitle)
+                .foregroundColor(.purple)
+                .bold()
+            //horizantal stack
+            HStack{
+                Text("nasılsın cnm")
+                Text("iyi misin")
+            }
+            Image("za")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: UIScreen.main.bounds.width * 0.8, height: UIScreen.main.bounds.height * 0.2, alignment: .center)
+        }
+
     }
 }
 
